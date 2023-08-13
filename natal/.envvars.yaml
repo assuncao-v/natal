@@ -1,0 +1,12 @@
+db_host : '127.0.0.1'
+db_name : 'natal'
+db_user : 'root'
+db_pw : 'a.-vUKLH_q=vG!7%RVsw$r1VZo'
+db_port: ''
+django_secret_key : 'django-insecure-5d5g78!&t5lykq4q=#e!!0pi22q#mds*8fj8dc7@$sxii(=y%='
+sqlite_mode : True
+debug_mode : True
+email_system : 'natal_system@gmail.com'
+email_pw : '@Fct{@oce$yShj4'
+hCAPTCHA_PUBLIC_KEY : '6484-dsadad4994ds949494d2314' 
+hCAPTCHA_PRIVATE_KEY : '6484-dsadad4994ds949494d2314dsd4900c0952'
