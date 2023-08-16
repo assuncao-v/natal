@@ -1,0 +1,17 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/index.css'%}">
+{% endblock %}
+{% block custom_js %}
+<script src="{% static 'js/index.js'%}" defer></script>
+{% endblock %}
+
+{% block main %}
+    <header>
+        <h1>Início do <i>Natal</i>!</h1>
+    </header>
+{% endblock %}
+
+
+

@@ -1,8 +1,8 @@
 #Standard libraries imports
 from django.urls import path
 #Local apps imports
-from .views import *
+from . import views
 
-urlpatters = [
+urlpatterns = [
     path('', views.index, name='home'),
 ]

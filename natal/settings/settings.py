@@ -57,7 +57,7 @@ ROOT_URLCONF = 'settings.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(PROJECT_ROOT,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,7 +125,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT,'static')
-MEDIA_ROOT = os.path.join(BASE_DIR,'natal/media')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT,'media')
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/template.css'%}">
+    <link rel="stylesheet" href="{% static 'css/global.css'%}">
+    {% block custom_css %}{% endblock %}
+    <!-- Custom JS -->
+    {% block custom_js %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="/" 
+        alt="Retorno para a página inicial">
+            <img href="{% static 'images/PMNF_logos/logo.png'%}"
+            alt="Logo da Prefeitura Municipal de Nova Friburgo">
+        </a>
+        <a href="https://www.pmnf.rj.gov.br/site/" 
+        alt="Acesso para o site da Prefeitura Municipal de Nova Friburgo">
+            <img href="{% static '/images/PMNF_logos/logo_turismo.png' %}"
+            alt="Logo da Secretária de Turismo">
+        </a>
+        <ul id="nav-items">
+            <li>Início</li>
+            <li>Galeria</li>
+            <li>Eventos</li>
+            <li>Casa do Papai Noel</li>
+            <li>Nova Friburgo</li>
+        <ul>
+    </nav>
+    {% block main %}{% endblock %}
+    <footer>
+    </footer>
+</body>
+</html>
