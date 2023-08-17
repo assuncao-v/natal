@@ -1,0 +1,14 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block 'custom_css' %}
+<link rel='stylesheet/css' href="{% static '/css/natal_app/sobreNovaFriburgo.css'%}">
+{% endblock  %}
+{% block 'custom_js' %}
+<script src="{% static '/js/natal_app/sobreNovaFriburgo.js'%}" defer></script>
+{% endblock  %}
+{% block title %}Natal | Sobre Nova Friburgo{% endblock %}
+
+{% block main %}
+<h1>Nova Friburgo é...</h1>
+{% endblock  %}
+

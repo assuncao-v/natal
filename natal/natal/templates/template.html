@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'css/template.css'%}">
+    <link rel="stylesheet" href="{% static 'css/reset.css'%}">
+    {% block custom_css %}{% endblock %}
+    <!-- Custom JS -->
+    {% block custom_js %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a 
+        href="https://www.pmnf.rj.gov.br/site/"
+        alt="Acesso para o site da Prefeitura Municipal de Nova Friburgo">
+            <img 
+            src="{% static 'images/PMNF_logos/logoFriburgo.png'%}"
+            alt="Logo da Prefeitura Municipal de Nova Friburgo">
+        </a>
+        <a 
+        href="https://senhas.novafriburgo.rj.gov.br/"
+        alt="Acesso para o site da Secretária de Turismo">
+            <img 
+            src="{% static '/images/PMNF_logos/logoTurismo.png' %}" 
+            alt="Logo da Secretária de Turismo">
+        </a>
+        <ul id="nav-items">
+            <li>
+                <a 
+                href="/" 
+                alt="Retorno para a página inicial">
+                Início
+                </a>
+            </li>
+            <li>
+                <a 
+                href="{% url 'galeria'%}" 
+                alt="Acesso à galeria de fotos">
+                Galeria
+                </a>
+            </li>
+            <li>
+                <a 
+                href="/" 
+                alt="Acesso aos eventos que ocorreram">
+                Eventos
+                </a>
+            </li>
+            <li>
+                <a 
+                href="{% url 'programacao'%}" 
+                alt="Acesso à programação dos eventos">
+                Programação
+                </a>
+            </li>
+            <li>
+                <a 
+                href="{% url 'sobreNovaFriburgo'%}" 
+                alt="Informações sobre Nova Friburgo">
+                Nova Friburgo
+                </a>
+            </li>
+        <ul>
+    </nav>
+    {% block main %}{% endblock %}
+    <footer>
+        <h2>Parceiros</h2>
+        <hr>
+        <div>
+            <img 
+            src="{% static 'images/PMNF_logos/logo.png'%}"
+            alt="Logo da Prefeitura Municipal de Nova Friburgo">
+            <img 
+            src=""
+            alt="Logo da Secretária de Turismo">
+            <img
+            src=""
+            alt="Logo da Secretária de Cultura">
+        </div>
+    </footer>
+</body>
+</html>

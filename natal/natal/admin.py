@@ -1,3 +1,5 @@
+#Stardard libraries imports
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+admin.site.register([Local,Evento,Parceiro,Testemunho,Galeria,Programacao])

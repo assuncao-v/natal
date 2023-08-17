@@ -1,0 +1,13 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/natal_app/galeria.css'%}">
+{% endblock %}
+{% block custom_js %}
+<script scr="{% static 'js/natal_app/galeria.js'%}"></script>
+{% endblock %}
+{% block title %}Natal | Galeria{% endblock %}
+
+{% block main %}
+    <h1>As fotos são...</h1>
+{% endblock %}

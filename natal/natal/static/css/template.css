@@ -1,0 +1,28 @@
+:root{
+    --gonden-color: rgb(229, 176, 62);
+    --red-color: rgb(151, 5, 2);
+    --green-color: rgb(12, 99, 8);
+}
+*{
+    font-family: sans-serif;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+#navbar{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5em;
+}
+#navbar img{
+    height: 14vh;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

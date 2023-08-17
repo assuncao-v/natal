@@ -1,0 +1,13 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href={% static 'css/natal_app/programacao.css'%}>
+{% endblock %}
+{% block custom_js %}
+<script src="{% static 'css/natal_app/programacao.js'%}"></script>
+{% endblock %}
+{% block title %}Natal | Programação {% endblock %}
+
+{% block main %}
+    <h1>Programação dos Eventos será...</h1>
+{% endblock %}
